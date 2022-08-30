@@ -1,0 +1,129 @@
+@import "variables";
+@import "mixins";
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*---------------Header--------------------*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  border-bottom: $grey;
+  @media (max-width: 998px) {
+    margin-bottom: 40px;
+  }
+  .sign-up {
+    padding: 10px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+  img {
+    @media (max-width: 768px) {
+      transform: scale(0.6);
+    }
+  }
+}
+
+/*---------------Log-in--------------------*/
+
+#login {
+  .login-header {
+    h3 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0;
+    }
+  }
+
+  form {
+    margin: 40px auto;
+    width: 90%;
+
+    @media (min-width: 768px) {
+      width: 60%;
+    }
+
+    @media (min-width: 990px) {
+      width: 35%;
+    }
+    .login-google {
+      display: flex;
+      align-items: center;
+      background-color: $primaryColor;
+      padding: 4px;
+      border-radius: 10px;
+      transition: 0.2s ease;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+      .btn-google {
+        font-size: 16px;
+        padding: 0.3rem;
+        margin-left: 24px;
+        color: #fff;
+      }
+      .google-logo {
+        @include flex(row);
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        float: left;
+      }
+    }
+
+    #floatingInput,
+    #floatingPassword {
+      background: $grey;
+    }
+
+    .btn-login {
+      background: $secondaryColor;
+      width: 100%;
+      height: 3rem;
+      font-size: 14px;
+      border: none;
+      transition: 0.2s ease;
+      &:hover {
+        opacity: 0.8;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+        height: 100%;
+        height: 100%;
+        @include flex(row);
+      }
+    }
+  }
+  .password {
+    position: relative;
+    .fa {
+      position: absolute;
+      right: 16px;
+      top: 40%;
+      color: $mainDark;
+      cursor: pointer;
+    }
+  }
+  .forgot-password {
+    a {
+      transition: 0.2s ease;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}

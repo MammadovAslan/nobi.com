@@ -1,0 +1,134 @@
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*---------------Header--------------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  border-bottom: #f2f2f2;
+}
+@media (max-width: 998px) {
+  header {
+    margin-bottom: 40px;
+  }
+}
+header .sign-up {
+  padding: 10px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+header .sign-up p {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  header .sign-up p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  header img {
+    transform: scale(0.6);
+  }
+}
+
+/*---------------Sign Up--------------------*/
+#signup {
+  /*---------------Form--------------------*/
+  /*-------Show/hide password eye-button--------*/
+  /*---------------Privacy politics agreement--------------------*/
+}
+#signup .signup-header h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+#signup form {
+  margin: 40px auto;
+  width: 90%;
+  /*---------------Google--------------------*/
+  /*---------------Registration inputs--------------------*/
+}
+@media (min-width: 768px) {
+  #signup form {
+    width: 60%;
+  }
+}
+@media (min-width: 990px) {
+  #signup form {
+    width: 35%;
+  }
+}
+#signup form .signup-google {
+  display: flex;
+  align-items: center;
+  background-color: #2d9cdb;
+  padding: 4px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+#signup form .signup-google:hover {
+  opacity: 0.8;
+}
+#signup form .signup-google .btn-google {
+  font-size: 16px;
+  padding: 0.3rem;
+  margin-left: 24px;
+  color: #fff;
+}
+#signup form .signup-google .google-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  float: left;
+}
+#signup form #floatingInput,
+#signup form #floatingPassword {
+  background: #f2f2f2;
+}
+#signup form .btn-create-account {
+  background: #00bba4;
+  width: 100%;
+  height: 3rem;
+  font-size: 14px;
+  border: none;
+  transition: 0.2s ease;
+}
+#signup form .btn-create-account:hover {
+  opacity: 0.8;
+}
+#signup form .btn-create-account a {
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#signup .password {
+  position: relative;
+}
+#signup .password .fa {
+  position: absolute;
+  right: 16px;
+  top: 40%;
+  color: #1a1d1c;
+  cursor: pointer;
+}
+#signup .agreement a {
+  transition: 0.2s ease;
+}
+#signup .agreement a:hover {
+  opacity: 0.6;
+}/*# sourceMappingURL=signup.css.map */

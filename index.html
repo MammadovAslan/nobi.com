@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css\login.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <title>Log In</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <header>
+              <img src="images\Group 85.svg" alt="" />
+              <div class="sign-up">
+                <p>
+                  Not a member?
+                  <span>
+                    <a href="signup.html" class="text-decoration-none ps-3">
+                      Sign up now</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+      <div id="login">
+        <div class="container">
+          <div class="row mx-auto">
+            <div class="col-12 text-center mt-2">
+              <div class="login-header">
+                <h3>Log in to Nobi</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <form>
+                <div class="login-google">
+                  <div class="google-logo">
+                    <img
+                      src="images\google+logo+new+icon-1320185797820629294 1.svg"
+                    />
+                  </div>
+                  <a class="btn-google text-decoration-none" href="#">
+                    Log in with Google account</a
+                  >
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-center text-between-login"
+                >
+                  <p class="m-0 my-3">or</p>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating password">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                  />
+                  <label for="floatingPassword">Password</label>
+                  <i class="fa fa-eye" id="togglePassword"></i>
+                </div>
+
+                <div class="row mb-4 mt-3">
+                  <div class="col text-end forgot-password">
+                    <a href="#" class="text-decoration-none"
+                      >Forgot password?</a
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg btn-login"
+                    >
+                      <a href="balance.html">Log in</a>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="JS\passwordToggle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/dd04b6e6c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
