@@ -3560,7 +3560,6 @@ main #main-content #settings-photo .settings-buttons button:hover a {
 main #main-content #settings-photo .settings-buttons button a {
   display: block;
   font-size: 14px;
-  margin: 9px 20px;
   color: #2d9cdb;
   text-decoration: none;
 }
