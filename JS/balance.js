@@ -1,11 +1,11 @@
 const form = document.querySelector(".add-account-form");
-const btnConnect = document.querySelector(".btn-connect-bank-account");
-const seccess = document.querySelector("#request-success");
+const btnAccountConnect = document.querySelector(".btn-connect-bank-account");
+const successMessage = document.querySelector("#request-success");
 
-btnConnect.addEventListener("click", () => {
+btnAccountConnect.addEventListener("click", () => {
   if (getComputedStyle(form).display === "block") {
     form.style.display = "none";
-    btnConnect.style.display = "none";
-    seccess.style.display = "flex";
+    btnAccountConnect.style.display = "none";
+    successMessage.style.display = "flex";
   }
 });

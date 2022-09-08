@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <title>Settings</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="nav">
+                <div class="header-menu">
+                  <input id="menu__toggle" type="checkbox" />
+                  <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                  </label>
+                  <div class="shadow__background"></div>
+
+                  <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Home</a></li>
+                    <li><a class="menu__item" href="#">Features</a></li>
+                    <li><a class="menu__item" href="#">Support</a></li>
+                    <li><a class="menu__item" href="#">Other menu</a></li>
+                    <li><a class="menu__item" href="#">Other menu</a></li>
+                  </ul>
+                </div>
+                <div class="logo me-auto">
+                  <img src="images\Vector.svg" alt="" />
+                  <img src="images\Group 670.svg" alt="" />
+                </div>
+                <div class="nav-items me-auto">
+                  <a href="#" class="nav-item">Features</a>
+                  <a href="#" class="nav-item">Support</a>
+                </div>
+
+                <div class="profile">
+                  <div id="search">
+                    <div class="large-screen-search">
+                      <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="&#xF002; Search"
+                        style="font-family: Arial, FontAwesome"
+                        aria-label="Search"
+                      />
+                    </div>
+                    <div class="small-screen-search">
+                      <div class="search-box">
+                        <button class="btn-search">
+                          <div class="fas fa-search"></div>
+                        </button>
+                        <input
+                          type="search"
+                          class="input-search"
+                          placeholder="Search"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="upload">
+                    <a href="#" class="upload-button">Upload</a>
+                  </div>
+
+                  <div class="notifications">
+                    <a href="#"><img src="images\notification.svg" alt="" /></a>
+                  </div>
+                  <div class="profile-image porfile-button">
+                    <img src="images\Ellipse 93.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="shadow__background shadow__main"></div>
+
+        <div class="container">
+          <div class="row py-4">
+            <div class="col-lg-3">
+              <aside id="sidebar">
+                <div class="sidebar-header p-4">
+                  <img
+                    src="images\Ellipse 93.svg"
+                    class="profile-image"
+                    alt=""
+                  />
+                  <div class="sidebar-header-title">
+                    <h3>
+                      <span id="sidebar-name">Ulvin</span>
+                      <span id="sidebar-surname">Omarov</span>
+                    </h3>
+                    <p>
+                      UX designer
+                      <span
+                        ><img src="images\icons\star.svg" alt="" /> 4.7</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="upload">
+                  <a href="#" class="upload-button">Upload</a>
+                </div>
+                <div class="sidebar-links">
+                  <ul>
+                    <li class="sidebar-links">
+                      <a href="#">
+                        <img src="images\icons\gallery.svg" alt="" /> My posts
+                      </a>
+                    </li>
+                    <li class="sidebar-links">
+                      <a href="calendar.html" target="_blank">
+                        <img src="images\icons\calendar.svg" alt="" /> Calendar
+                      </a>
+                    </li>
+                    <li class="sidebar-links">
+                      <a href="balance.html" target="_blank">
+                        <img src="images\icons\money.svg" alt="" /> Balance
+                      </a>
+                    </li>
+                    <li class="sidebar-links">
+                      <a href="#">
+                        <img src="images\icons\gallery.svg" alt="" /> Payouts
+                      </a>
+                    </li>
+                    <li class="sidebar-links">
+                      <a href="profilesettings.html" target="_blank">
+                        <img src="images\icons\settings.svg" alt="" /> Settings
+                      </a>
+                    </li>
+                    <li class="sidebar-links">
+                      <a href="index.html">
+                        <img src="images\icons\log out.svg" alt="" /> Logout
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+            <div class="col-lg-9 col-md-12 px-md-2 px-0">
+              <div class="col-12">
+                <div class="title-settings">
+                  <h4>Settings</h4>
+                </div>
+              </div>
+              <div class="col-12" id="main-content">
+                <div id="settings-photo">
+                  <div class="settings-image">
+                    <img src="images\Ellipse 93.svg" alt="" />
+                  </div>
+                  <div class="settings-buttons">
+                    <input type="file" id="change-photo" />
+                    <label for="change-photo" class="btn-change-photo"
+                      >Change
+                      <span class="hide-text">profile</span> photo</label
+                    >
+                    <button type="button" class="btn" id="btn-delete-photo">
+                      <a href="#"
+                        ><span class="delete-text">Delete photo</span>
+                        <i class="fa fa-trash-can delete-icon"></i>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div id="settings-information">
+                  <div class="information-title">
+                    <h3>Personal information</h3>
+                  </div>
+                  <div class="information-inputs">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="name"
+                        id="name-input"
+                        class="form-control"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="surname"
+                        id="surname-input"
+                        class="form-control"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Surname</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="occupation"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Occupation</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Email</label>
+                    </div>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Country</option>
+                      <option value="1">Azerbaijan</option>
+                      <option value="2">Canada</option>
+                      <option value="3">Germany</option></select
+                    ><select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>City</option>
+                      <option value="1">Baku</option>
+                      <option value="2">Tokyo</option>
+                      <option value="3">Koln</option>
+                    </select>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="linkedurl"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Linkedin URL</label>
+                    </div>
+                  </div>
+                </div>
+                <div id="settings-biography">
+                  <div class="biography-title">
+                    <h3>Biography</h3>
+                  </div>
+                  <div class="biography-content">
+                    <div class="biography-textarea">
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="6"
+                        placeholder="Add details about you"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-1 mt-md-2" id="certificates">
+                <div class="certificates-content">
+                  <div class="certificates-title">
+                    <h3>Certificates</h3>
+                  </div>
+                  <div class="certificates-inputs">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="name"
+                        class="form-control cerfiticate-input"
+                        value="Certificate name"
+                      />
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="name"
+                        class="form-control cerfiticate-input"
+                        value="Certificate link (optional)"
+                      />
+                    </div>
+                  </div>
+                  <div class="certificate-add">
+                    <div class="add-title">
+                      <h6>Certificate image</h6>
+                    </div>
+                    <div class="choose-file">
+                      <div class="choose-file-inputs">
+                        <input
+                          type="file"
+                          id="certificate-choose-file"
+                          class="d-none"
+                        />
+                        <label
+                          for="certificate-choose-file"
+                          class="btn-choose-file"
+                          >Choose file</label
+                        >
+                        <p class="choosen-file">
+                          Web design IDF.jpeg
+                          <img
+                            src="images\icons\close.svg"
+                            class="ms-4"
+                            alt=""
+                          />
+                        </p>
+                        <p class="file-types">(Only png, jpg, jpeg, pdf)</p>
+                      </div>
+
+                      <button class="btn btn-add-certificate">
+                        Add certificate
+                      </button>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="certificates-list">
+                    <div class="content">
+                      <div class="certificate-image">
+                        <img src="images\certificate.svg" alt="Certificate" />
+                      </div>
+                      <div class="certificate-desctiption">
+                        <div class="title">
+                          <h4>Mobile UX Design Certificate</h4>
+                        </div>
+                        <div class="link">
+                          <a href="#">https://www.interaction-de/ulvi-omarov</a>
+                        </div>
+                      </div>
+                      <div class="deletion-message">
+                        <p>Undo deletion</p>
+                      </div>
+                      <div class="certificate-settings">
+                        <div class="dropdown">
+                          <img
+                            src="images\icons\settings.svg"
+                            alt=""
+                            class="dropdown-toggle bg-white"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                          />
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li>
+                              <a class="dropdown-item delete-certificate"
+                                >Delete</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+
+                    <div class="content">
+                      <div class="certificate-image">
+                        <img src="images\certificate.svg" alt="Certificate" />
+                      </div>
+                      <div class="certificate-desctiption">
+                        <div class="title">
+                          <h4>
+                            Dynamic UX: Design and Usability on Web and Mobile
+                            Certificate
+                          </h4>
+                        </div>
+                        <div class="link">
+                          <a href="#">https://www.interaction-de/ulvi-omarov</a>
+                        </div>
+                      </div>
+                      <div class="deletion-message">
+                        <p>Undo deletion</p>
+                      </div>
+                      <div class="certificate-settings">
+                        <div class="dropdown">
+                          <img
+                            src="images\icons\settings.svg"
+                            alt=""
+                            class="dropdown-toggle bg-white"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                          />
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li>
+                              <a class="dropdown-item delete-certificate"
+                                >Delete</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+
+                    <div class="content">
+                      <div class="certificate-image">
+                        <img src="images\certificate.svg" alt="Certificate" />
+                      </div>
+                      <div class="certificate-desctiption">
+                        <div class="title">
+                          <h4>Mobile UX Design Certificate</h4>
+                        </div>
+                        <div class="link">
+                          <a href="#">https://www.interaction-de/ulvi-omarov</a>
+                        </div>
+                      </div>
+                      <div class="deletion-message">
+                        <p>Undo deletion</p>
+                      </div>
+                      <div class="certificate-settings">
+                        <div class="dropdown">
+                          <img
+                            src="images\icons\settings.svg"
+                            alt=""
+                            class="dropdown-toggle bg-white"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                          />
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li>
+                              <a class="dropdown-item delete-certificate"
+                                >Delete</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 footer-elements">
+              <div class="rights">
+                <p>2021 Nobi. All rights reserved.</p>
+              </div>
+              <nav class="footer-navigation">
+                <a href="#" class="footer-link">About us</a>
+                <a href="#" class="footer-link">FAQ</a>
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/dd04b6e6c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JS\main.js"></script>
+  </body>
+</html>

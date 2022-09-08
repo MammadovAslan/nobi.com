@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css\calendar.css" />
+    <link rel="stylesheet" href="css\style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,11 +23,11 @@
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
     />
-    <title>Consultant profile - calendar</title>
+    <title>Calendar</title>
   </head>
   <body>
     <div id="wrapper">
-      <header>
+      <header id="header-main">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -37,7 +37,7 @@
                   <label class="menu__btn" for="menu__toggle">
                     <span></span>
                   </label>
-                  <div class="shadow__background"></div>
+                  <div class="shadow__background" tabindex="1"></div>
 
                   <ul class="menu__box">
                     <li><a class="menu__item" href="#">Home</a></li>
@@ -110,7 +110,10 @@
                     alt=""
                   />
                   <div class="sidebar-header-title">
-                    <h3>Ulvin Omarov</h3>
+                    <h3>
+                      <span id="sidebar-name">Ulvin</span>
+                      <span id="sidebar-surname">Omarov</span>
+                    </h3>
                     <p>
                       UX designer
                       <span
@@ -145,7 +148,7 @@
                       </a>
                     </li>
                     <li class="sidebar-links">
-                      <a href="#">
+                      <a href="profilesettings.html" target="_blank">
                         <img src="images\icons\settings.svg" alt="" /> Settings
                       </a>
                     </li>

@@ -1,0 +1,402 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../layout/header";
+@import "../layout/sidebar";
+@import "../layout/footer";
+
+main {
+  padding-top: 124px;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
+  background: #f9f9f9;
+  /*---------------Title-----------------*/
+  .title-settings {
+    @media (max-width: 768px) {
+      margin: 12px 0;
+    }
+  }
+  #main-content,
+  #certificates {
+    background-color: #fff;
+    border-radius: 8px;
+    @media (min-width: 768px) {
+      padding: 32px;
+      padding-right: 72px;
+    }
+  }
+  #main-content {
+    /*---------------Change profile image-----------------*/
+
+    #settings-photo {
+      @include flex(row);
+      justify-content: flex-start;
+      gap: 16px;
+      padding: 32px 16px;
+      @media (min-width: 768px) {
+        padding: 0;
+      }
+      .settings-image {
+        img {
+          width: 80px;
+          height: 80px;
+          @media (min-width: 786px) {
+            height: 72px;
+            width: 72px;
+          }
+        }
+      }
+      /*---------------Change photo button-----------------*/
+      .settings-buttons {
+        #change-photo {
+          display: none;
+        }
+        .btn-change-photo {
+          padding: 10px 24px;
+          border: 1px solid $primaryColor;
+          color: $primaryColor;
+          @include transition(0.2s);
+          border-radius: 8px;
+          cursor: pointer;
+          &:hover {
+            background-color: $primaryColor;
+            color: #fff;
+          }
+        }
+        /*---------------Delete photo button-----------------*/
+        .delete-text,
+        .hide-text {
+          display: none;
+          @media (min-width: 768px) {
+            display: inline-block;
+          }
+        }
+        .delete-icon {
+          @media (min-width: 768px) {
+            display: none;
+          }
+        }
+        display: flex;
+        padding-left: 8px;
+        gap: 16px;
+        button {
+          border-radius: 8px;
+          padding: 0 !important;
+          border: 1px solid $primaryColor;
+          &:hover {
+            background-color: $primaryColor;
+            a {
+              color: #fff;
+            }
+          }
+          a {
+            display: block;
+            font-size: $fs-14;
+            margin: 9px 20px;
+            color: $primaryColor;
+            text-decoration: none;
+            @media (max-width: 380px) {
+              font-size: 11px;
+              margin: 9px;
+            }
+          }
+        }
+      }
+    }
+    /*---------------Information inputs-----------------*/
+
+    #settings-information {
+      .information-inputs {
+        padding: 0 16px;
+        @media (min-width: 768px) {
+          padding: 0;
+          margin-top: 32px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 32px;
+          row-gap: 8px;
+        }
+        .form-select,
+        .form-floating {
+          margin-bottom: 16px;
+        }
+
+        .form-select {
+          min-height: 58px;
+        }
+
+        * {
+          border-radius: 8px;
+        }
+        input,
+        select {
+          color: $secondaryDark;
+          background-color: $grey;
+          outline: none;
+          border: none;
+        }
+      }
+    }
+    /*---------------Biography-----------------*/
+
+    .biography-title {
+      padding-top: 40px;
+      padding-bottom: 32px;
+      @media (max-width: 768px) {
+        padding-bottom: 0;
+      }
+    }
+
+    #settings-biography {
+      .biography-content {
+        .biography-textarea {
+          padding: 24px 16px;
+          @media (min-width: 768px) {
+            padding: 0;
+          }
+          textarea {
+            padding: 14px 24px;
+            color: $inputColor;
+            background-color: $grey;
+            resize: none;
+            border: none;
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .information-title,
+  .biography-title,
+  .certificates-title {
+    padding: 0 0 32px 19px;
+    color: $mainDark;
+    @media (min-width: 768px) {
+      padding: 40px 0 0 0;
+    }
+    h3 {
+      font-size: $fs-20;
+      font-weight: $fw-600;
+    }
+  }
+
+  /*---------------Certificates-----------------*/
+
+  #certificates {
+    @media (min-width: 768px) {
+      padding-right: 192px;
+    }
+    .certificates-content {
+      .certificates-title {
+        padding-top: 34px;
+        padding-bottom: 0;
+        @media (min-width: 768px) {
+          padding: 0;
+        }
+      }
+      /*---------------Certificates inputs-----------------*/
+
+      .certificates-inputs {
+        color: $secondaryDark;
+        font-size: $fs-14;
+        padding: 16px;
+        @media (min-width: 768px) {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 24px;
+          margin: 32px 0 12px 0;
+          padding: 0;
+        }
+        input {
+          max-height: 48px;
+          padding: 0;
+          padding-left: 14px;
+          border: 1px solid #bdbdbd;
+          font-size: $fs-14;
+        }
+      }
+      .certificate-add {
+        color: $secondaryDark;
+        padding: 16px;
+        @media (min-width: 768px) {
+          padding: 0;
+        }
+        .add-title {
+          h6 {
+            margin-bottom: 0;
+          }
+        }
+        .choose-file {
+          .choose-file-inputs {
+            p {
+              margin: 0;
+            }
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: minmax(min-content, max-content);
+            @media (min-width: 768px) {
+              grid-template-columns: 2fr 3fr;
+              align-items: baseline;
+            }
+            .btn-choose-file {
+              padding: 10px 50px;
+              max-width: 188px;
+              background-color: $grey;
+              font-size: $fs-14;
+              border: 1px solid $inputColor;
+              border-radius: 8px;
+              cursor: pointer;
+              @include transition(0.2s);
+              margin: 16px 0 8px 0;
+              @media (min-width: 768px) {
+                margin: 12px 0 24px 0;
+              }
+              &:hover {
+                opacity: 0.6;
+              }
+            }
+            .choosen-file {
+              font-weight: $fw-600;
+              grid-row: 3/4;
+              grid-column: 1/3;
+              @media (min-width: 768px) {
+                grid-row: 1/2;
+                grid-column: 2/3;
+              }
+              img {
+                display: inline-block;
+                cursor: pointer;
+              }
+            }
+            .file-types {
+              font-size: $fs-14;
+              color: $inputColor;
+              grid-row: 2/3;
+              margin-bottom: 16px;
+              margin-left: 8px;
+            }
+          }
+
+          .btn-add-certificate {
+            padding: 12px 27px;
+            background-color: $primaryColor;
+            border: 1px solid $primaryColor;
+            color: #fff;
+            border-radius: 30px;
+            font-weight: $fw-500;
+            margin-top: 40px;
+            @include transition(0.2s);
+            &:hover {
+              background-color: #fff;
+              color: $primaryColor;
+            }
+            @media (min-width: 768px) {
+              margin-top: 32px;
+            }
+          }
+        }
+      }
+      .line {
+        height: 1px;
+        background-color: $grey;
+        margin: 32px 16px;
+        @media (min-width: 768px) {
+          margin: 32px 0;
+        }
+      }
+      /*---------------List of certificates-----------------*/
+
+      .certificates-list {
+        .line {
+          @media (max-width: 768px) {
+            margin: 18px 16px;
+          }
+          &:last-child {
+            padding-bottom: 42px;
+            background-color: #fff;
+            border-top: 1px solid $grey;
+          }
+        }
+        .content {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 16px;
+          @media (min-width: 768px) {
+            gap: 24px;
+            padding: 0;
+          }
+          .certificate-image {
+            img {
+              @media (min-width: 768px) {
+                width: 144px;
+              }
+            }
+          }
+          .certificate-desctiption {
+            flex-grow: 2;
+            @media (max-width: 768px) {
+              max-width: 220px;
+              flex-grow: 1;
+            }
+            .title {
+              h4 {
+                font-size: $fs-14;
+                font-weight: $fw-600;
+              }
+            }
+            .link {
+              a {
+                font-size: $fs-14;
+                white-space: nowrap;
+                text-decoration: none;
+                color: #2f80ed;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+          .deletion-message {
+            display: none;
+            flex-grow: 4;
+            p {
+              width: 150px;
+              padding: 12px 14px;
+              background-color: $grey;
+              border: 1px solid $grey;
+              color: $secondaryDark;
+              border-radius: 8px;
+              @include transition(0.2s);
+              cursor: pointer;
+              &:hover {
+                opacity: 0.6;
+              }
+            }
+          }
+          .certificate-settings {
+            align-self: flex-start;
+            .dropdown {
+              img {
+                @include transition(0.3s);
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 80%;
+                padding: 8px;
+                &:hover {
+                  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                }
+              }
+              .delete-certificate {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
