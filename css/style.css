@@ -3712,8 +3712,8 @@ main #certificates .certificates-content .certificate-add .choose-file .choose-f
   }
 }
 main #certificates .certificates-content .certificate-add .choose-file .choose-file-inputs .btn-choose-file {
-  padding: 10px 50px;
-  max-width: 188px;
+  padding: 10px 40px;
+  max-width: 170px;
   background-color: #f2f2f2;
   font-size: 14px;
   border: 1px solid #828282;
