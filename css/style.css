@@ -3519,6 +3519,12 @@ main #main-content #settings-photo .settings-buttons .btn-change-photo:hover {
   background-color: #2d9cdb;
   color: #fff;
 }
+@media (max-width: 768px) {
+  main #main-content #settings-photo .settings-buttons .btn-change-photo {
+    padding: 6px 24px;
+    height: 40px;
+  }
+}
 main #main-content #settings-photo .settings-buttons .delete-text,
 main #main-content #settings-photo .settings-buttons .hide-text {
   display: none;
@@ -3538,6 +3544,12 @@ main #main-content #settings-photo .settings-buttons button {
   border-radius: 8px;
   padding: 0 !important;
   border: 1px solid #2d9cdb;
+}
+@media (max-width: 768px) {
+  main #main-content #settings-photo .settings-buttons button {
+    width: 40px;
+    height: 40px;
+  }
 }
 main #main-content #settings-photo .settings-buttons button:hover {
   background-color: #2d9cdb;
@@ -3803,6 +3815,11 @@ main #certificates .certificates-content .certificates-list .content .certificat
   main #certificates .certificates-content .certificates-list .content .certificate-desctiption {
     max-width: 220px;
     flex-grow: 1;
+  }
+}
+@media (max-width: 376px) {
+  main #certificates .certificates-content .certificates-list .content .certificate-desctiption {
+    max-width: 184px;
   }
 }
 main #certificates .certificates-content .certificates-list .content .certificate-desctiption .title h4 {
