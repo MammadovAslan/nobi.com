@@ -41,13 +41,40 @@ const name = document.querySelector("#name-input");
 const surname = document.querySelector("#surname-input");
 
 name.addEventListener("blur", () => {
-  sidebarName.textContent = name.value;
+  if (name.value.length > 0) {
+    sidebarName.textContent = name.value;
+  } else {
+    sidebarName.textContent = "Ulvin";
+  }
 });
 
 surname.addEventListener("blur", () => {
-  sidebarSurname.textContent = surname.value;
+  if (surname.value.length > 0) {
+    sidebarSurname.textContent = surname.value;
+  } else {
+    sidebarSurname.textContent = "Omarov";
+  }
+});
+
+/*----------Certificate inputs--------------------*/
+const certificateName = document.querySelector("#certificate-input-name");
+const certificateLink = document.querySelector("#certificate-input-link");
+
+function clearInput() {
+  this.value = "";
+}
+
+certificateName.addEventListener("focus", clearInput);
+certificateName.addEventListener("blur", () => {
+  certificateName.value = "Certificate name";
+});
+
+certificateLink.addEventListener("focus", clearInput);
+certificateLink.addEventListener("blur", () => {
+  certificateLink.value = "Certificate link (optional)";
 });
 /*----------Certificate settings--------------------*/
+
 const certificateImage = document.getElementsByClassName("certificate-image");
 const certificateDescr = document.getElementsByClassName(
   "certificate-desctiption"
@@ -69,3 +96,22 @@ for (let i = 0; i < deleteCertificateBtn.length; i++) {
     certificateDeleted[i].style.display = "none";
   });
 }
+
+/*----------Settings > Change profile photo--------------------*/
+const changePhotoBtn = document.querySelector("#changephoto");
+const photo = document.querySelector("#settingspicture");
+const deletePhoto = document.querySelector("#delete-photo");
+
+deletePhoto.addEventListener("click", () => {
+  photo.src = "images/Ellipse 93.svg";
+  changePhotoBtn.value = "";
+});
+
+changephoto.onchange = () => {
+  const [file] = changephoto.files;
+  if (file) {
+    settingspicture.src = URL.createObjectURL(file);
+  }
+};
+
+/*----------Certificates > Add certificate file--------------------*/

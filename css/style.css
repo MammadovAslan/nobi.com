@@ -3504,7 +3504,7 @@ main #main-content #settings-photo .settings-buttons {
   padding-left: 8px;
   gap: 16px;
 }
-main #main-content #settings-photo .settings-buttons #change-photo {
+main #main-content #settings-photo .settings-buttons #changephoto {
   display: none;
 }
 main #main-content #settings-photo .settings-buttons .btn-change-photo {
@@ -3542,13 +3542,14 @@ main #main-content #settings-photo .settings-buttons .hide-text {
 }
 main #main-content #settings-photo .settings-buttons button {
   border-radius: 8px;
-  padding: 0 !important;
   border: 1px solid #2d9cdb;
+  padding: 10px 24px;
 }
 @media (max-width: 768px) {
   main #main-content #settings-photo .settings-buttons button {
     width: 40px;
     height: 40px;
+    padding: 0;
   }
 }
 main #main-content #settings-photo .settings-buttons button:hover {

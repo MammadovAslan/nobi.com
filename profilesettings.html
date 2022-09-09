@@ -169,16 +169,20 @@
               <div class="col-12" id="main-content">
                 <div id="settings-photo">
                   <div class="settings-image">
-                    <img src="images\Ellipse 93.svg" alt="" />
+                    <img
+                      src="images\Ellipse 93.svg"
+                      alt=""
+                      id="settingspicture"
+                    />
                   </div>
                   <div class="settings-buttons">
-                    <input type="file" id="change-photo" />
-                    <label for="change-photo" class="btn-change-photo"
+                    <input type="file" id="changephoto" />
+                    <label for="changephoto" class="btn-change-photo"
                       >Change
                       <span class="hide-text">profile</span> photo</label
                     >
                     <button type="button" class="btn" id="btn-delete-photo">
-                      <a href="#"
+                      <a id="delete-photo"
                         ><span class="delete-text">Delete photo</span>
                         <i class="fa fa-trash-can delete-icon"></i>
                       </a>
@@ -281,6 +285,7 @@
                         type="name"
                         class="form-control cerfiticate-input"
                         value="Certificate name"
+                        id="certificate-input-name"
                       />
                     </div>
                     <div class="form-floating mb-3">
@@ -288,6 +293,7 @@
                         type="name"
                         class="form-control cerfiticate-input"
                         value="Certificate link (optional)"
+                        id="certificate-input-link"
                       />
                     </div>
                   </div>
@@ -299,11 +305,11 @@
                       <div class="choose-file-inputs">
                         <input
                           type="file"
-                          id="certificate-choose-file"
+                          id="certificateChooseFile"
                           class="d-none"
                         />
                         <label
-                          for="certificate-choose-file"
+                          for="certificateChooseFile"
                           class="btn-choose-file"
                           >Choose file</label
                         >
