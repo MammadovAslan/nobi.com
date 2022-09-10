@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
     side.style.top = "24px";
     if (windowSize <= 988) {
       side.style.top = "0px";
-      side.style.transition = "0s";
+      side.style.transition = "0.1s";
     }
   } else {
     header.style.top = "0";
