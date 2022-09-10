@@ -9,6 +9,7 @@ aside {
   top: 86px;
   border-radius: 8px;
   @include flex(column);
+  @include transition(0.3s);
   background-color: #fff;
   -webkit-animation: slide-left 0.25s ease;
   -moz-animation: slide-left 0.25s ease;
@@ -36,7 +37,7 @@ aside {
   @media (max-width: 1198px) {
     padding: 10px 12px;
   }
-  @media (max-width: 988px) {
+  @include for-tablet-landscape {
     position: fixed;
     display: none;
     justify-content: flex-start;
@@ -54,7 +55,7 @@ aside {
   .sidebar-header {
     background-color: #fff;
     @include flex(column);
-    @media (max-width: 988px) {
+    @include for-tablet-landscape {
       flex-direction: row;
       width: 100%;
     }
@@ -62,25 +63,25 @@ aside {
       width: 72px;
       height: 72px;
       margin-bottom: 12px;
-      @media (max-width: 988px) {
+      @include for-tablet-landscape {
         width: 40px;
         height: 40px;
       }
     }
     .sidebar-header-title {
-      @media (max-width: 998px) {
+      @include for-tablet-landscape {
         margin-left: 16px;
       }
       h3 {
         font-size: $fs-20;
         line-height: 24px;
         font-weight: $fw-600;
-        @media (max-width: 998px) {
+        @include for-tablet-landscape {
           font-size: $fs-16;
         }
       }
       p {
-        @media (max-width: 998px) {
+        @include for-tablet-landscape {
           font-size: $fs-12;
         }
         span {
@@ -98,7 +99,7 @@ aside {
     }
   }
   .sidebar-links {
-    @media (max-width: 988px) {
+    @include for-tablet-landscape {
       margin-top: 32px;
     }
     ul {
@@ -113,7 +114,7 @@ aside {
           text-decoration: none;
           color: #000;
           @include transition(0.2s);
-          @media (max-width: 998px) {
+          @include for-tablet-landscape {
           }
           img {
             padding-right: 16px;
@@ -138,7 +139,7 @@ aside {
       display: none;
     }
 
-    @media (max-width: 998px) {
+    @include for-tablet-landscape {
       padding: 12px 65px;
       margin-left: 28px;
     }

@@ -1,3 +1,5 @@
+/*--------------Center Element------------------*/
+
 @mixin flex($direction) {
   display: flex;
   justify-content: center;
@@ -5,6 +7,32 @@
   flex-direction: $direction;
 }
 
+/*--------------Transition------------------*/
+
 @mixin transition($time) {
   transition: $time ease;
+}
+
+/*--------------Media Queries------------------*/
+@mixin for-tablet-portrait {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape {
+  @media (max-width: 988px) {
+    @content;
+  }
+}
+@mixin for-mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-mobile-sm($size) {
+  @media (max-width: $size) {
+    @content;
+  }
 }

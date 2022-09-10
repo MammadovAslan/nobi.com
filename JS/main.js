@@ -113,5 +113,3 @@ changephoto.onchange = () => {
     settingspicture.src = URL.createObjectURL(file);
   }
 };
-
-/*----------Certificates > Add certificate file--------------------*/

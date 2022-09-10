@@ -10,10 +10,9 @@
   color: $secondaryDark;
   font-size: $fs-14;
   min-height: 60px;
-  @media (max-width: 768px) {
+  @include for-mobile {
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: center;
   }
   .footer-navigation {
     .footer-link {
@@ -26,11 +25,8 @@
         background-color: $secondaryColor;
         color: #fff;
       }
-      @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      @include for-mobile {
+        @include flex(column);
         padding: 16px;
       }
     }
@@ -38,7 +34,7 @@
   .rights {
     p {
       margin: 0;
-      @media (max-width: 768px) {
+      @include for-mobile {
         padding: 24px;
       }
     }

@@ -1,12 +1,21 @@
 /*----------Pages-----------*/ /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 .shadow__background {
   height: 100%;
   width: 100%;
@@ -38,6 +47,7 @@ body {
   right: 0;
   left: 0;
   top: 0;
+  transition: 0.3s ease;
   /*----------Nav Bar------------------*/
   /*----------Profile------------------*/
 }
@@ -315,7 +325,7 @@ body {
   }
 }
 #header-main .profile .upload-button:hover {
-  background-color: #00bba4; /*secondary Color */
+  background-color: #00bba4;
   color: #fff;
 }
 #header-main .profile .notifications a {
@@ -348,6 +358,9 @@ body {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*--------------Sidebar------------------*/
 aside {
   position: sticky;
@@ -358,6 +371,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 0.3s ease;
   background-color: #fff;
   -webkit-animation: slide-left 0.25s ease;
   -moz-animation: slide-left 0.25s ease;
@@ -429,7 +443,7 @@ aside .sidebar-header .profile-image {
     height: 40px;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title {
     margin-left: 16px;
   }
@@ -439,12 +453,12 @@ aside .sidebar-header .sidebar-header-title h3 {
   line-height: 24px;
   font-weight: 600;
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title h3 {
     font-size: 16px;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title p {
     font-size: 12px;
   }
@@ -501,7 +515,7 @@ aside .upload-button {
     display: none;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .upload-button {
     padding: 12px 65px;
     margin-left: 28px;
@@ -515,6 +529,9 @@ aside .upload-button:hover {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*--------------Footer------------------*/
 .footer-elements {
   display: flex;
@@ -528,7 +545,6 @@ aside .upload-button:hover {
   .footer-elements {
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: center;
   }
 }
 .footer-elements .footer-navigation .footer-link {
@@ -545,9 +561,9 @@ aside .upload-button:hover {
 @media (max-width: 768px) {
   .footer-elements .footer-navigation .footer-link {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 16px;
   }
 }
@@ -697,7 +713,7 @@ main #balance-activity {
   font-size: 14px;
   line-height: 20px;
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   main #balance-activity {
     margin-top: 32px;
     margin-bottom: 0;
@@ -860,12 +876,21 @@ main .pagination li a:hover {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 .shadow__background {
   height: 100%;
   width: 100%;
@@ -897,6 +922,7 @@ body {
   right: 0;
   left: 0;
   top: 0;
+  transition: 0.3s ease;
   /*----------Nav Bar------------------*/
   /*----------Profile------------------*/
 }
@@ -1174,7 +1200,7 @@ body {
   }
 }
 #header-main .profile .upload-button:hover {
-  background-color: #00bba4; /*secondary Color */
+  background-color: #00bba4;
   color: #fff;
 }
 #header-main .profile .notifications a {
@@ -1207,6 +1233,9 @@ body {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*--------------Sidebar------------------*/
 aside {
   position: sticky;
@@ -1217,6 +1246,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 0.3s ease;
   background-color: #fff;
   -webkit-animation: slide-left 0.25s ease;
   -moz-animation: slide-left 0.25s ease;
@@ -1288,7 +1318,7 @@ aside .sidebar-header .profile-image {
     height: 40px;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title {
     margin-left: 16px;
   }
@@ -1298,12 +1328,12 @@ aside .sidebar-header .sidebar-header-title h3 {
   line-height: 24px;
   font-weight: 600;
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title h3 {
     font-size: 16px;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title p {
     font-size: 12px;
   }
@@ -1360,7 +1390,7 @@ aside .upload-button {
     display: none;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .upload-button {
     padding: 12px 65px;
     margin-left: 28px;
@@ -1374,6 +1404,9 @@ aside .upload-button:hover {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*--------------Footer------------------*/
 .footer-elements {
   display: flex;
@@ -1387,7 +1420,6 @@ aside .upload-button:hover {
   .footer-elements {
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: center;
   }
 }
 .footer-elements .footer-navigation .footer-link {
@@ -1404,9 +1436,9 @@ aside .upload-button:hover {
 @media (max-width: 768px) {
   .footer-elements .footer-navigation .footer-link {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 16px;
   }
 }
@@ -1466,7 +1498,7 @@ aside .upload-button:hover {
     padding-top: 0;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   #calendar-big .calendar-big-header .time-array {
     flex-direction: column;
     gap: 20px;
@@ -1799,7 +1831,7 @@ main #calendar-big .calendar-big {
   grid-template-columns: repeat(6, 1fr);
   grid-template-columns: repeat(7, 1fr);
 }
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   main #calendar-big .calendar-big {
     margin: 12px 0 32px;
   }
@@ -1918,12 +1950,21 @@ main #calendar-big .meets-list .meet ul li::before {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 .shadow__background {
   height: 100%;
   width: 100%;
@@ -1955,6 +1996,7 @@ body {
   right: 0;
   left: 0;
   top: 0;
+  transition: 0.3s ease;
   /*----------Nav Bar------------------*/
   /*----------Profile------------------*/
 }
@@ -2232,7 +2274,7 @@ body {
   }
 }
 #header-main .profile .upload-button:hover {
-  background-color: #00bba4; /*secondary Color */
+  background-color: #00bba4;
   color: #fff;
 }
 #header-main .profile .notifications a {
@@ -2265,6 +2307,9 @@ body {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*--------------Sidebar------------------*/
 aside {
   position: sticky;
@@ -2275,6 +2320,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 0.3s ease;
   background-color: #fff;
   -webkit-animation: slide-left 0.25s ease;
   -moz-animation: slide-left 0.25s ease;
@@ -2346,7 +2392,7 @@ aside .sidebar-header .profile-image {
     height: 40px;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title {
     margin-left: 16px;
   }
@@ -2356,12 +2402,12 @@ aside .sidebar-header .sidebar-header-title h3 {
   line-height: 24px;
   font-weight: 600;
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title h3 {
     font-size: 16px;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title p {
     font-size: 12px;
   }
@@ -2418,7 +2464,7 @@ aside .upload-button {
     display: none;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .upload-button {
     padding: 12px 65px;
     margin-left: 28px;
@@ -2432,6 +2478,9 @@ aside .upload-button:hover {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*--------------Footer------------------*/
 .footer-elements {
   display: flex;
@@ -2445,7 +2494,6 @@ aside .upload-button:hover {
   .footer-elements {
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: center;
   }
 }
 .footer-elements .footer-navigation .footer-link {
@@ -2462,9 +2510,9 @@ aside .upload-button:hover {
 @media (max-width: 768px) {
   .footer-elements .footer-navigation .footer-link {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 16px;
   }
 }
@@ -2607,6 +2655,9 @@ main .btn-connect-bank-account:hover {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 * {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
@@ -2618,145 +2669,7 @@ main .btn-connect-bank-account:hover {
   margin-top: 16px;
   border-bottom: #f2f2f2;
 }
-@media (max-width: 998px) {
-  #header {
-    margin-bottom: 40px;
-  }
-}
-#header .sign-up {
-  padding: 10px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-}
-#header .sign-up p {
-  margin: 0;
-}
-@media (max-width: 768px) {
-  #header .sign-up p {
-    font-size: 14px;
-  }
-}
-@media (max-width: 768px) {
-  #header img {
-    transform: scale(0.6);
-  }
-}
-
-/*---------------Sign Up--------------------*/
-#signup {
-  /*---------------Form--------------------*/
-  /*-------Show/hide password eye-button--------*/
-  /*---------------Privacy politics agreement--------------------*/
-}
-#signup .signup-header h3 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  margin: 0;
-}
-#signup form {
-  margin: 40px auto;
-  width: 90%;
-  /*---------------Google--------------------*/
-  /*---------------Registration inputs--------------------*/
-}
-@media (min-width: 768px) {
-  #signup form {
-    width: 60%;
-  }
-}
-@media (min-width: 990px) {
-  #signup form {
-    width: 35%;
-  }
-}
-#signup form .signup-google {
-  display: flex;
-  align-items: center;
-  background-color: #2d9cdb;
-  padding: 4px;
-  border-radius: 10px;
-  transition: 0.2s ease;
-  cursor: pointer;
-}
-#signup form .signup-google:hover {
-  opacity: 0.8;
-}
-#signup form .signup-google .btn-google {
-  font-size: 16px;
-  padding: 0.3rem;
-  margin-left: 24px;
-  color: #fff;
-}
-#signup form .signup-google .google-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  background-color: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  float: left;
-}
-#signup form #floatingInput,
-#signup form #floatingPassword {
-  background: #f2f2f2;
-}
-#signup form .btn-create-account {
-  background: #00bba4;
-  width: 100%;
-  height: 3rem;
-  font-size: 14px;
-  border: none;
-  transition: 0.2s ease;
-}
-#signup form .btn-create-account:hover {
-  opacity: 0.8;
-}
-#signup form .btn-create-account a {
-  text-decoration: none;
-  color: #fff;
-  height: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-#signup .password {
-  position: relative;
-}
-#signup .password .fa {
-  position: absolute;
-  right: 16px;
-  top: 40%;
-  color: #1a1d1c;
-  cursor: pointer;
-}
-#signup .agreement a {
-  transition: 0.2s ease;
-}
-#signup .agreement a:hover {
-  opacity: 0.6;
-}
-
-/*------------Colors-------------*/
-/*------------Font Sizes-------------*/
-/*------------Font Weights-------------*/
-* {
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-/*---------------Header--------------------*/
-#header {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
-  border-bottom: #f2f2f2;
-}
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   #header {
     margin-bottom: 40px;
   }
@@ -2782,32 +2695,34 @@ main .btn-connect-bank-account:hover {
 }
 
 /*---------------Log-in--------------------*/
-#login {
+#main {
   /*---------------Password input--------------------*/
 }
-#login .login-header h3 {
+#main .login-header h3,
+#main .signup-header h3 {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   margin: 0;
 }
-#login form {
+#main form {
   margin: 40px auto;
   width: 90%;
   /*---------------Log in with Google--------------------*/
   /*---------------Log in button--------------------*/
 }
 @media (min-width: 768px) {
-  #login form {
+  #main form {
     width: 60%;
   }
 }
 @media (min-width: 990px) {
-  #login form {
+  #main form {
     width: 35%;
   }
 }
-#login form .login-google {
+#main form .login-google,
+#main form .signup-google {
   display: flex;
   align-items: center;
   background-color: #2d9cdb;
@@ -2816,16 +2731,19 @@ main .btn-connect-bank-account:hover {
   transition: 0.2s ease;
   cursor: pointer;
 }
-#login form .login-google:hover {
+#main form .login-google:hover,
+#main form .signup-google:hover {
   opacity: 0.8;
 }
-#login form .login-google .btn-google {
+#main form .login-google .btn-google,
+#main form .signup-google .btn-google {
   font-size: 16px;
   padding: 0.3rem;
   margin-left: 24px;
   color: #fff;
 }
-#login form .login-google .google-logo {
+#main form .login-google .google-logo,
+#main form .signup-google .google-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2836,11 +2754,12 @@ main .btn-connect-bank-account:hover {
   border-radius: 10px;
   float: left;
 }
-#login form #floatingInput,
-#login form #floatingPassword {
+#main form #floatingInput,
+#main form #floatingPassword {
   background: #f2f2f2;
 }
-#login form .btn-login {
+#main form .btn-login,
+#main form .btn-create-account {
   background: #00bba4;
   width: 100%;
   height: 3rem;
@@ -2848,10 +2767,12 @@ main .btn-connect-bank-account:hover {
   border: none;
   transition: 0.2s ease;
 }
-#login form .btn-login:hover {
+#main form .btn-login:hover,
+#main form .btn-create-account:hover {
   opacity: 0.8;
 }
-#login form .btn-login a {
+#main form .btn-login a,
+#main form .btn-create-account a {
   text-decoration: none;
   color: #fff;
   height: 100%;
@@ -2861,32 +2782,43 @@ main .btn-connect-bank-account:hover {
   align-items: center;
   flex-direction: row;
 }
-#login .password {
+#main .password {
   position: relative;
 }
-#login .password .fa {
+#main .password .fa {
   position: absolute;
   right: 16px;
   top: 40%;
   color: #1a1d1c;
   cursor: pointer;
 }
-#login .forgot-password a {
+#main .forgot-password a,
+#main .agreement a {
   transition: 0.2s ease;
 }
-#login .forgot-password a:hover {
+#main .forgot-password a:hover,
+#main .agreement a:hover {
   opacity: 0.6;
 }
 
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 .shadow__background {
   height: 100%;
   width: 100%;
@@ -2918,6 +2850,7 @@ body {
   right: 0;
   left: 0;
   top: 0;
+  transition: 0.3s ease;
   /*----------Nav Bar------------------*/
   /*----------Profile------------------*/
 }
@@ -3195,7 +3128,7 @@ body {
   }
 }
 #header-main .profile .upload-button:hover {
-  background-color: #00bba4; /*secondary Color */
+  background-color: #00bba4;
   color: #fff;
 }
 #header-main .profile .notifications a {
@@ -3228,6 +3161,9 @@ body {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*--------------Sidebar------------------*/
 aside {
   position: sticky;
@@ -3238,6 +3174,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 0.3s ease;
   background-color: #fff;
   -webkit-animation: slide-left 0.25s ease;
   -moz-animation: slide-left 0.25s ease;
@@ -3309,7 +3246,7 @@ aside .sidebar-header .profile-image {
     height: 40px;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title {
     margin-left: 16px;
   }
@@ -3319,12 +3256,12 @@ aside .sidebar-header .sidebar-header-title h3 {
   line-height: 24px;
   font-weight: 600;
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title h3 {
     font-size: 16px;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title p {
     font-size: 12px;
   }
@@ -3381,7 +3318,7 @@ aside .upload-button {
     display: none;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .upload-button {
     padding: 12px 65px;
     margin-left: 28px;
@@ -3395,6 +3332,9 @@ aside .upload-button:hover {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*--------------Footer------------------*/
 .footer-elements {
   display: flex;
@@ -3408,7 +3348,6 @@ aside .upload-button:hover {
   .footer-elements {
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: center;
   }
 }
 .footer-elements .footer-navigation .footer-link {
@@ -3425,9 +3364,9 @@ aside .upload-button:hover {
 @media (max-width: 768px) {
   .footer-elements .footer-navigation .footer-link {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 16px;
   }
 }
@@ -3492,7 +3431,7 @@ main #main-content #settings-photo .settings-image img {
   width: 80px;
   height: 80px;
 }
-@media (min-width: 786px) {
+@media (min-width: 768px) {
   main #main-content #settings-photo .settings-image img {
     height: 72px;
     width: 72px;
@@ -3876,6 +3815,9 @@ main #certificates .certificates-content .certificates-list .content .certificat
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*--------------Footer------------------*/
 .footer-elements {
   display: flex;
@@ -3889,7 +3831,6 @@ main #certificates .certificates-content .certificates-list .content .certificat
   .footer-elements {
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: center;
   }
 }
 .footer-elements .footer-navigation .footer-link {
@@ -3906,9 +3847,9 @@ main #certificates .certificates-content .certificates-list .content .certificat
 @media (max-width: 768px) {
   .footer-elements .footer-navigation .footer-link {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 16px;
   }
 }
@@ -3924,9 +3865,15 @@ main #certificates .certificates-content .certificates-list .content .certificat
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 .shadow__background {
   height: 100%;
   width: 100%;
@@ -3958,6 +3905,7 @@ body {
   right: 0;
   left: 0;
   top: 0;
+  transition: 0.3s ease;
   /*----------Nav Bar------------------*/
   /*----------Profile------------------*/
 }
@@ -4235,7 +4183,7 @@ body {
   }
 }
 #header-main .profile .upload-button:hover {
-  background-color: #00bba4; /*secondary Color */
+  background-color: #00bba4;
   color: #fff;
 }
 #header-main .profile .notifications a {
@@ -4268,6 +4216,9 @@ body {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 /*--------------Sidebar------------------*/
 aside {
   position: sticky;
@@ -4278,6 +4229,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 0.3s ease;
   background-color: #fff;
   -webkit-animation: slide-left 0.25s ease;
   -moz-animation: slide-left 0.25s ease;
@@ -4349,7 +4301,7 @@ aside .sidebar-header .profile-image {
     height: 40px;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title {
     margin-left: 16px;
   }
@@ -4359,12 +4311,12 @@ aside .sidebar-header .sidebar-header-title h3 {
   line-height: 24px;
   font-weight: 600;
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title h3 {
     font-size: 16px;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .sidebar-header .sidebar-header-title p {
     font-size: 12px;
   }
@@ -4421,7 +4373,7 @@ aside .upload-button {
     display: none;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   aside .upload-button {
     padding: 12px 65px;
     margin-left: 28px;
@@ -4479,7 +4431,7 @@ aside .upload-button:hover {
     padding-top: 0;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 988px) {
   #calendar-big .calendar-big-header .time-array {
     flex-direction: column;
     gap: 20px;
@@ -4528,6 +4480,9 @@ aside .upload-button:hover {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/
 .shadow__background {
   height: 100%;
   width: 100%;
@@ -4550,3 +4505,6 @@ aside .upload-button:hover {
 /*------------Colors-------------*/
 /*------------Font Sizes-------------*/
 /*------------Font Weights-------------*/
+/*--------------Center Element------------------*/
+/*--------------Transition------------------*/
+/*--------------Media Queries------------------*/

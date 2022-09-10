@@ -14,6 +14,7 @@ body {
   right: 0;
   left: 0;
   top: 0;
+  @include transition(0.3s);
   .navbar {
     background-color: #fff;
     .logo {
@@ -23,12 +24,12 @@ body {
           margin-bottom: 12px;
         }
         &:first-child {
-          @media (max-width: 768px) {
+          @include for-mobile {
             display: none;
           }
         }
       }
-      @media (max-width: 768px) {
+      @include for-mobile {
         margin: 0;
       }
     }
@@ -44,7 +45,7 @@ body {
       border-radius: 8px;
       font-size: $fs-14;
       line-height: 16px;
-      @media (max-width: 988px) {
+      @include for-tablet-landscape {
         display: none;
       }
     }
@@ -53,7 +54,7 @@ body {
       .form-control {
         background: $grey;
         border: none;
-        @media (max-width: 768px) {
+        @include for-mobile {
           padding: 5px;
           max-width: 40px;
           margin: 0px !important;
@@ -80,7 +81,7 @@ body {
         margin: 0px 0px 8px 5px;
       }
       img:first-child {
-        @media (max-width: 768px) {
+        @include for-mobile {
           display: none;
         }
       }
@@ -88,7 +89,7 @@ body {
     /*----------Hamburger menu------------------*/
     .header-menu {
       display: none;
-      @media (max-width: 768px) {
+      @include for-mobile {
         display: inline-block;
       }
       #menu__toggle {
@@ -177,7 +178,7 @@ body {
     justify-content: space-between;
     gap: 48px;
 
-    @media (max-width: 988px) {
+    @include for-tablet-landscape {
       display: none;
     }
     a {
@@ -225,7 +226,7 @@ body {
         input {
           width: 280px;
         }
-        @media (max-width: 768px) {
+        @include for-mobile {
           display: none;
         }
       }
@@ -266,7 +267,7 @@ body {
           }
         }
 
-        @media (max-width: 768px) {
+        @include for-mobile {
           display: block;
         }
       }
@@ -281,11 +282,11 @@ body {
       color: $secondaryColor;
       @include transition(0.3s);
       margin-right: 28px;
-      @media (max-width: 988px) {
+      @include for-tablet-landscape {
         display: none;
       }
       &:hover {
-        background-color: $secondaryColor; /*secondary Color */
+        background-color: $secondaryColor;
         color: #fff;
       }
     }
